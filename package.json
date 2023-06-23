@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "http-server"
+  },
+  "devDependencies": {
+    "daisyui": "^3.0.3",
+    "http-server": "^14.1.1",
+    "tailwindcss": "^3.3.2"
+  }
+}

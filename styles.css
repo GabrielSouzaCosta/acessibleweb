@@ -1,0 +1,24 @@
+@tailwind base;
+
+html, body {
+  scroll-behavior: smooth;
+}
+/* For WebKit browsers (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #b8b8b8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(48, 48, 48);
+}
+
+@tailwind components;
+@tailwind utilities;
