@@ -13,7 +13,7 @@
 <body id="body">
 
   <header class="bg-light-accent dark:bg-dark-accent transition-all h-16 sticky top-0 z-10 drop-shadow-sm">
-    <div class="container h-full mx-auto px-8 lg:px-20 2xl:px-40 flex items-center justify-between">
+    <div class="container h-full mx-auto px-4 sm:px-8 lg:px-20 2xl:px-40 flex items-center justify-between">
       <a href="#hero-section">
         <img 
           src="/assets/images/logo.png"
@@ -38,21 +38,22 @@
   </header>
 
   <div class="bg-light-accent dark:bg-neutral-800 transition-all">
-    <main class="container mx-auto px-8 lg:px-20 2xl:px-40 overflow-hidden">
+    <main class="container mx-auto px-4 sm:px-8 lg:px-20 2xl:px-40 overflow-hidden">
     
-      <section tabindex="0" id="hero-section" class="flex items-center justify-between w-full gap-10 min-h-full-window">
-        <section class="w-1/2">
-          <h1 class="text-6xl font-bold mb-4 dark:text-light-accent">
+      <section id="hero-section" class="flex flex-col xl:flex-row items-center text-center xl:text-start justify-center xl:justify-between w-full gap-10 min-h-full-window">
+        <section class="w-full sm:w-5/6 xl:w-1/2">
+          <h1 class="text-4xl sm:text-6xl 2xl:text-8xl font-bold mb-4 dark:text-light-accent">
             The Web Is For Everyone
           </h1>
-          <h2 class="text-3xl mb-8 text-gray-800 dark:text-gray-200">
+          <h2 class="text-lg sm:text-2xl 2xl:text-4xl mb-8 text-gray-800 dark:text-gray-200">
             Because That, here are some tips for improving your website accessibility
           </h2>
           <a
             href="#tips-section"
             class="
-            border border-primary bg-primary rounded text-2xl font-semibold text-light-accent px-4 py-2 drop-shadow-2xl transition-all duration-300
+            border border-primary bg-primary rounded text-xl sm:text-2xl xl:text-3xl font-semibold text-light-accent px-4 pt-2 pb-3 drop-shadow-2xl transition-all duration-300
             hover:bg-dark-accent hover:border-dark-accent
+            dark:hover:bg-light-accent dark:hover:text-dark-accent
             "
           >
             I wanna know
@@ -61,33 +62,34 @@
         <img
           src="/assets/images/hero-section-image.png"
           alt="Illustration of "
-          class="h-[90%]"
+          class="h-80 sm:h-96 xl:h-[90%] dark:invert"
         />
       </section>
-      <section id="accessibility-is-essential" class="flex flex-col items-center w-full min-h-[80vh]">
-        <div class="w-4/6 text-center">
-          <h3 class="text-3xl font-bold mb-4 dark:text-light-accent">
+      <section id="accessibility-is-essential" class="flex flex-col items-center w-full min-h-[50vh] xl:min-h-[80vh]">
+        <div class="w-full xl:w-4/6 text-center">
+          <h3 class="text-2xl sm:text-3xl font-bold mb-2 lg:mb-4 dark:text-light-accent">
             Why is Web Accessibility Essential?
           </h3>
-          <p class="text-2xl mb-8 text-gray-800 dark:text-gray-200">
+          <p class="text-lg sm:text-2xl mb-8 text-gray-800 dark:text-gray-200">
             Web accessibility is crucial for a number of reasons, many of which touch the social, economic, and legal fabric of society.
           </p>
         </div>
         <img
-          src="/assets/images/secondary-section-image.jpg"
+          src="/assets/images/secondary-section-image.png"
           alt="logo of Usable, is only the word Usable"
-          class="h-[36rem] object-fit"
+          class="sm:h-[26] md:h-[30rem] xl:h-[36rem] object-fit"
         />
       </section>
+      
       <section id="tips-section" class="min-h-full-window scroll-mt-40">
-        <h4 class="text-4xl font-bold mb-2 dark:text-light-accent">
+        <h4 class="text-3xl sm:text-4xl font-bold mb-2 dark:text-light-accent">
           Tips
         </h4>
-        <p class="text-3xl mb-8 text-gray-800 dark:text-gray-200">
+        <p class="text-2xl sm:text-3xl mb-8 text-gray-800 dark:text-gray-200">
           To Improve your Website Accessibility
         </p>
-        <section tabindex="0" class="flex items-center justify-between w-full gap-x-8 2xl:gap-x-20 mb-20">
-          <div class="w-1/2">
+        <section tabindex="0" class="flex flex-col xl:flex-row items-center justify-between w-full gap-x-8 2xl:gap-x-20 mb-20">
+          <div class="w-full xl:w-1/2 order-2 xl:order-1">
             <div class="mockup-code text-sm bg-dark-accent text-gray-100">
               <pre data-prefix="1"><code>&lt;body&gt;</code></pre>
               <pre data-prefix="2"><code> &lt;header&gt;</code></pre>
@@ -117,7 +119,7 @@
               <pre data-prefix="26"><code>&lt;/body&gt;</code></pre>
             </div>
           </div>
-          <div class="w-1/2">
+          <div class="w-full xl:w-1/2 order-1 xl:order-2 mb-4 xl:mb-0">
             <div class="bg-dark-accent dark:bg-light-accent rounded-full px-6 py-1.5 text-center mb-2 w-fit">
               <p class="uppercase text-xs text-light-accent dark:text-neutral-900 font-bold">
                 HTML
@@ -133,7 +135,7 @@
             </p>
           </div>
         </section>
-        <section tabindex="0" class="flex flex-col items-center mx-auto w-1/2 mb-20 text-center">
+        <section tabindex="0" class="flex flex-col items-center mx-auto w-full 2xl:w-1/2 mb-20 text-center">
           <div class="bg-dark-accent dark:bg-light-accent rounded-full px-6 py-1.5 text-center mb-2 w-fit">
             <p class="uppercase text-xs text-light-accent dark:text-neutral-900 font-bold">
               Colors
@@ -145,7 +147,7 @@
           <p class="text-lg mb-8 dark:text-gray-200">
             Contrast is crucial for accessibility because it affects the legibility and visibility of content, especially for individuals with visual impairments or certain types of color blindness
           </p>
-          <div class="flex gap-x-20 drop-shadow-2xl">
+          <div class="flex gap-x-2 sm:gap-x-10 2xl:gap-x-20 drop-shadow-2xl">
             <div>
               <div class="rounded-md bg-dark-accent p-4 h-60 flex flex-col items-center justify-center mb-4 text-center">
                 <p class="text-neutral-500 font-semibold text-2xl mb-2">
@@ -174,8 +176,8 @@
             </div>
           </div>
         </section>
-        <section tabindex="0" class="flex justify-between gap-x-40 w-full mb-20 mt-10">
-          <div class="w-1/2">
+        <section tabindex="0" class="flex justify-between gap-x-40 w-full mb-10 2xl:mb-20 mt-10">
+          <div class="w-full">
             <div class="bg-dark-accent dark:bg-light-accent rounded-full px-6 py-1.5 text-center mb-2 w-fit">
               <p class="uppercase text-xs text-light-accent dark:text-neutral-900 font-bold">
                 Images
@@ -196,8 +198,9 @@
             </p>
           </div>
         </section>
-        <section class="flex flex-col items-center mx-auto w-4/6 mb-20 text-center">
-          <div class="bg-dark-accent dark:bg-light-accent rounded-full px-6 py-1.5 text-center mb-2 w-fit">
+
+        <section class="flex flex-col 2xl:items-center mx-auto w-full 2xl:w-4/6 mb-20 2xl:text-center">
+          <div class="bg-dark-accent dark:bg-light-accent rounded-full px-6 py-1.5 2xl:text-center mb-2 w-fit">
             <p class="uppercase text-xs text-light-accent dark:text-neutral-900 font-bold">
               Motion
             </p>
@@ -208,7 +211,7 @@
           <p class="text-lg mb-8 dark:text-gray-200">
             By designing websites with keyboard navigation in mind, you provide an inclusive browsing experience, allowing users with disabilities, motor impairments, or personal preferences to access and interact with your content easily.
           </p>
-          <div class="grid grid-cols-4 gap-x-5 h-40 w-full drop-shadow-2xl text-xl font-bold">
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-5 h-40 w-full drop-shadow-2xl text-sm sm:text-xl font-bold">
             <button
               class="
                 block rounded-lg border border-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 flex items-center justify-center w-full h-full w-full transition-all
@@ -247,7 +250,8 @@
             </button>
           </div>
         </section>
-        <section class="flex flex-col items-center mx-auto w-4/6 mb-20 text-center">
+
+        <section class="flex flex-col 2xl:items-center mx-auto w-full 2xl:w-4/6 mb-20 2xl:text-center">
           <div class="bg-dark-accent dark:bg-light-accent rounded-full px-6 py-1.5 text-center mb-2 w-fit">
             <p class="uppercase text-xs text-light-accent dark:text-neutral-900 font-bold">
               Language
@@ -266,7 +270,8 @@
             <pre class="text-start" data-prefix="4"><code>&lt;p lang="es"&gt;Deberíamos preocuparnos por la accesibilidad.&lt;p&gt;</code></pre>
           </div>
         </section>
-        <section id="forms" class="flex flex-col items-center mb-20 w-5/6 mx-auto">
+
+        <section id="forms" class="flex flex-col items-center mb-10 lg:mb-20 w-full 2xl:w-5/6 mx-auto">
           <div class="bg-dark-accent dark:bg-light-accent rounded-full px-6 py-1.5 text-center mb-2 w-fit">
             <p class="uppercase text-xs text-light-accent dark:text-neutral-900 font-bold">
               Forms
@@ -275,19 +280,19 @@
           <p class="text-2xl uppercase font-bold mb-4 dark:text-light-accent">
             Assertive Forms
           </p>
-          <div class="flex w-full gap-x-20">
-            <div class="w-1/2">
+          <div class="flex flex-col sm:flex-row w-full gap-x-5 xl:gap-x-20">
+            <div class="w-full sm:w-1/2 mb-6 sm:mb-0"> 
               <form class="rounded-md bg-zinc-50 dark:bg-zinc-700 p-4 flex flex-col justify-between mb-4 h-60 border border-neutral-200 dark:border-zinc-800">
                 <div>
                   <div class="form-control mb-4">
-                    <input type="text" class="rounded border px-4 py-2 w-full" placeholder="Gabriel Souza">
+                    <input type="text" class="rounded border px-4 py-2 w-full dark:bg-neutral-500 dark:border-neutral-400 dark:placeholder:text-neutral-300" placeholder="Gabriel Souza">
                   </div>
     
                   <div class="form-control mb-4">
-                    <input type="text" class="rounded border px-4 py-2 w-full" placeholder="accessibleweb@email.com">
+                    <input type="text" class="rounded border px-4 py-2 w-full dark:bg-neutral-500 dark:border-neutral-400 dark:placeholder:text-neutral-300" placeholder="accessibleweb@email.com">
                   </div>
                 </div>
-                <button type="submit" class="bg-green-700 dark:bg-green-500 rounded-lg py-1.5 text-zinc-100 font-semibold transition-all hover:bg-dark-accent">
+                <button type="submit" class="bg-green-700 dark:bg-green-500 rounded-lg py-1.5 text-zinc-100 font-semibold transition-all hover:bg-dark-accent dark:hover:bg-light-accent dark:hover:text-neutral-800">
                   Register
                 </button>
               </form>
@@ -295,24 +300,24 @@
                 <i class="ph-bold ph-x text-2xl text-neutral-200"></i>
               </div>
             </div>
-            <div class="w-1/2 drop-shadow-2xl">
-              <form class="rounded-md bg-zinc-50 p-4 flex flex-col justify-between mb-4 h-60 border dark:border-zinc-800">
+            <div class="w-full sm:w-1/2 drop-shadow-2xl">
+              <form class="rounded-md bg-zinc-50 dark:bg-zinc-700 p-4 flex flex-col justify-between mb-4 h-60 border dark:border-zinc-800">
                 <div>
-                  <div class="form-control mb-2">
+                  <div class="form-control mb-2 dark:text-neutral-100">
                     <label for="name" class="mb-1">
                       Name
                     </label>
-                    <input type="text" class="rounded border px-4 py-2 w-full" placeholder="Gabriel Souza">
+                    <input type="text" class="rounded border px-4 py-2 w-full dark:bg-neutral-500 dark:border-neutral-400 dark:placeholder:text-neutral-300" placeholder="Gabriel Souza">
                   </div>
     
-                  <div class="form-control mb-4">
+                  <div class="form-control mb-4 dark:text-neutral-100">
                     <label for="name" class="mb-1">
                       Email
                     </label>
-                    <input type="text" class="rounded border px-4 py-2 w-full" placeholder="accessibleweb@email.com">
+                    <input type="text" class="rounded border px-4 py-2 w-full dark:bg-neutral-500 dark:border-neutral-400 dark:placeholder:text-neutral-300" placeholder="accessibleweb@email.com">
                   </div>
                 </div>
-                <button type="submit" class="bg-green-700 dark:bg-green-500 rounded-lg py-1.5 text-zinc-100 font-semibold transition-all hover:bg-dark-accent">
+                <button type="submit" class="bg-green-700 dark:bg-green-500 rounded-lg py-1.5 text-zinc-100 font-semibold transition-all hover:bg-dark-accent dark:hover:bg-light-accent dark:hover:text-neutral-800">
                   Register
                 </button>
               </form>
@@ -335,11 +340,11 @@
           <p class="text-lg dark:text-gray-200">
             ARIA is a set of special attributes for accessibility that can be added to any markup language, but is especially suited for HTML.
           </p>
-          <div class="flex flex-col justify-start gap-y-5 mt-8 w-4/6">
-            <div class="relative rounded-lg border bg-zinc-50 drop-shadow-sm px-4 py-2 w-full h-full">
+          <div class="flex flex-col justify-start gap-y-5 mt-8 lg:w-full 2xl:w-4/6">
+            <div class="relative rounded-lg border dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-700 drop-shadow-sm px-4 py-2 w-full h-full">
               <button
                 type="button"
-                class="text-neutral-900 hover:text-gray-500 transition-all text-lg font-medium flex items-center justify-between w-full"
+                class="text-neutral-900 hover:text-gray-500 dark:text-neutral-100 dark:hover:text-gray-300 transition-all text-lg font-medium flex items-center justify-between w-full"
                 id="toggleButton"
                 aria-controls="content"
                 aria-expanded="false"
@@ -353,7 +358,7 @@
               </button>
               <div
                 id="content"
-                class="hidden mt-2"
+                class="hidden mt-2 dark:text-neutral-200"
                 aria-hidden="true"
               >
                 <hr class="border-t border-gray-200 pb-2">
@@ -410,10 +415,10 @@
                 Use automated accessibility testing tools to identify common accessibility issues and ensure compliance with accessibility standards. These tools can scan your website and provide you with a detailed report of accessibility violations and suggestions for improvement.
               </p>
     
-              <div class="flex-1 flex items-end gap-x-2">
-                <a href="https://www.deque.com/axe/" class="btn btn-dark-accent">Deque Axe</a>
-                <a href="https://developers.google.com/web/tools/lighthouse" class="btn btn-dark-accent">Google Lighthouse</a>
-                <a href="https://www.tenon.io/" class="btn btn-dark-accent">Tenon.io</a>
+              <div class="flex-1 flex flex-col gap-y-2 sm:flex-row sm:items-end gap-x-2">
+                <a href="https://www.deque.com/axe/" target="_blank" rel="noreferrer" class="btn btn-dark-accent">Deque Axe</a>
+                <a href="https://developers.google.com/web/tools/lighthouse" target="_blank" rel="noreferrer" class="btn btn-dark-accent">Google Lighthouse</a>
+                <a href="https://www.tenon.io/" target="_blank" rel="noreferrer" class="btn btn-dark-accent">Tenon.io</a>
               </div>
             </div>
     
@@ -428,8 +433,8 @@
                 Manual testing involves evaluating your website's accessibility by using assistive technologies, such as screen readers, keyboard-only navigation, and other accessibility tools. It allows you to experience your website from the perspective of users with disabilities and uncover issues that automated tests may miss.
               </p>
               <div>
-                <a href="https://www.w3.org/WAI/demos/bad/before/home.html" class="btn btn-light-accent mb-2">W3C Web Accessibility Initiative - Before and After Demonstration</a>
-                <a href="https://www.webaccessibility.com/" class="btn btn-light-accent w-full">WebAccessibility.com</a>
+                <a href="https://www.w3.org/WAI/demos/bad/before/home.html" target="_blank" rel="noreferrer" class="btn btn-light-accent mb-2">W3C Web Accessibility Initiative - Before and After Demonstration</a>
+                <a href="https://www.webaccessibility.com/" target="_blank" rel="noreferrer" class="btn btn-light-accent w-full">WebAccessibility.com</a>
               </div>
             </div>
           </div>
@@ -439,7 +444,7 @@
   </div>
 
   <footer class="h-14 bg-neutral-800 dark:bg-dark-accent">
-    <div class="container h-full mx-auto px-8 lg:px-20 2xl:px-40 flex justify-between items-center">
+    <div class="container h-full mx-auto px-4 sm:px-8 lg:px-20 2xl:px-40 flex justify-between items-center">
       <a href="#hero-section">
         <img 
           src="/assets/images/logo.png"
@@ -448,7 +453,7 @@
         />
       </a>
       <a  
-        class="text-sm text-gray-100 font-semibold"
+        class="text-xs sm:text-sm text-gray-100 font-semibold"
         href="https://www.freepik.com/free-vector/electronic-accessibility-abstract-concept-vector-illustration-accessibility-websites-electronic-device-disabled-people-communication-technology-adjustable-web-pages-abstract-metaphor_24122185.htm#query=accessibility&position=0&from_view=search&track=robertav1_2_sidr"
       >
         Images by vectorjuice
@@ -457,92 +462,6 @@
     </div>
   </footer>
 
-  <script>
-    let body = document.getElementById('body');
-    const isDarkModePreferred = window.matchMedia('(prefers-color-scheme: dark)').matches
-    const darkModePreference = localStorage.getItem('dark');
-
-    if (isDarkModePreferred && !darkModePreference) {
-      body.classList.add('dark');
-    } else if (darkModePreference === 'true') {
-      body.classList.add('dark');
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      let darkModeToggler = document.getElementById('dark-mode-toggler');
-      let darkModeButton = document.querySelector('.swap');
-      darkModeToggler.addEventListener('click', toggleTheme);
-      
-      // if (body.classList.contains('dark')) {
-      //   darkModeButton.classList.add('swap-active');
-      // }
-
-      function toggleTheme(e) {
-        if (darkModeButton.classList.contains('swap-active')) {
-          darkModeButton.classList.remove('swap-active')
-          body.classList.remove('dark');
-          localStorage.setItem('dark', 'false');
-        } else {
-          darkModeButton.classList.add('swap-active');
-          body.classList.add('dark');
-          localStorage.setItem('dark', 'true');
-        }
-      }
-    })
-  </script>
-  <script>
-    function submitForm(event) {
-      event.preventDefault(); 
-      var name = document.getElementById('name').value;
-      var email = document.getElementById('email').value;
-      var message = document.getElementById('message').value;
-    
-      if (name.trim() === '') {
-        alert('Please enter your name.');
-        return;
-      }
-      if (email.trim() === '') {
-        alert('Please enter your email.');
-        return;
-      }
-      if (message.trim() === '') {
-        alert('Please enter a message.');
-        return;
-      }
-  
-      // If all fields are valid, submit the form
-      document.getElementById('form').submit();
-    }
-  </script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const toggleButton = document.getElementById('toggleButton');
-      const content = document.getElementById('content');
-      const arrow = document.getElementById('accordion-arrow-down');
-      const ariaExpandedLine = document.getElementById("aria-expanded-line");
-      const ariaHiddenLine = document.getElementById("aria-hidden-line");
-
-      toggleButton.addEventListener('click', toggleContent);
-
-      function toggleContent() {
-        arrow.classList.toggle('rotate-180');
-        const expanded = toggleButton.getAttribute('aria-expanded') === 'true';
-        const hidden = content.getAttribute('aria-hidden') === 'true';
-        toggleButton.setAttribute('aria-expanded', !expanded);
-        content.setAttribute('aria-hidden', !hidden);
-        content.classList.toggle('hidden');
-        
-        if (ariaExpandedLine.innerText.includes('false')) {
-          ariaExpandedLine.innerText = ariaExpandedLine.innerText.replace("false", "true");
-          ariaHiddenLine.innerText = ariaHiddenLine.innerText.replace("true", "false");
-        } else {
-          ariaExpandedLine.innerText = ariaExpandedLine.innerText.replace("true", "false");
-          ariaHiddenLine.innerText = ariaHiddenLine.innerText.replace("false", "true");
-        }
-        
-      }
-    })
-  </script>
-
+  <script src="./script.js"></script>
 </body>
 </html>
