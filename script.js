@@ -1,4 +1,4 @@
-let body = document.getElementById('body');
+let body = document.body;
 const isDarkModePreferred = window.matchMedia('(prefers-color-scheme: dark)').matches
 const darkModePreference = localStorage.getItem('dark');
 
@@ -11,26 +11,22 @@ else if (darkModePreference === 'true') {
 
 document.addEventListener('DOMContentLoaded', () => {
   let darkModeToggler = document.getElementById('dark-mode-toggler');
-  let darkModeButton = document.querySelector('.swap');
   darkModeToggler.addEventListener('click', toggleTheme);
   
   if (body.classList.contains('dark')) {
-    darkModeButton.classList.add('swap-active');
+    darkModeToggler.checked = true;
   }
 
   function toggleTheme() {
-    darkModeButton = document.querySelector('.swap');
-    if (darkModeButton.classList.contains('swap-active')) {
-      darkModeButton.classList.remove('swap-active')
-      body.classList.remove('dark');
-      localStorage.setItem('dark', 'false');
-    } else {
-      darkModeButton.classList.add('swap-active');
+    darkModeToggler = document.getElementById('dark-mode-toggler');
+    if (darkModeToggler.checked) {
       body.classList.add('dark');
       localStorage.setItem('dark', 'true');
+    } else {
+      body.classList.remove('dark');
+      localStorage.setItem('dark', 'false');
     }
   }
-
 
   const toggleButton = document.getElementById('toggleButton');
   const content = document.getElementById('content');
@@ -57,4 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
   }
+
+  let forms = document.querySelectorAll('.form');
+  Array.from(forms).forEach((item) => {
+    item.addEventListener('submit', (e) => {
+      e.preventDefault();
+    })
+  })
 })
