@@ -66,8 +66,8 @@
         />
       </section>
       <section id="accessibility-is-essential" class="flex flex-col items-center w-full min-h-[50vh] xl:min-h-[80vh]">
-        <div class="w-full xl:w-4/6 text-center">
-          <h3 class="text-2xl sm:text-3xl font-bold mb-2 lg:mb-4 dark:text-light-accent">
+        <div tabindex="0"  class="w-full xl:w-4/6 text-center">
+          <h3  class="text-2xl sm:text-3xl font-bold mb-2 lg:mb-4 dark:text-light-accent">
             Why is Web Accessibility Essential?
           </h3>
           <p class="text-lg sm:text-2xl mb-8 text-gray-800 dark:text-gray-200">
@@ -75,6 +75,7 @@
           </p>
         </div>
         <img
+          tabindex="0" 
           src="/assets/images/secondary-section-image.png"
           alt="a man sitting in a wheelchair next to a man on a laptop, and 3 different screens with figures representing visual, auditory and motor impairment in the background"
           class="sm:h-[26] md:h-[30rem] xl:h-[36rem] object-fit"
@@ -82,7 +83,7 @@
       </section>
       
       <section id="tips-section" class="min-h-full-window scroll-mt-40">
-        <h4 class="text-2xl sm:text-4xl font-bold mb-2 dark:text-light-accent">
+        <h4 tabindex="0"  class="text-2xl sm:text-4xl font-bold mb-2 dark:text-light-accent">
           Practical Tips for Improving Website Accessibility
         </h4>
         <p class="text-xl sm:text-2xl mb-8 text-gray-800 dark:text-gray-200">
@@ -176,7 +177,7 @@
             </div>
           </div>
         </section>
-        <section tabindex="0" class="flex justify-between gap-x-40 w-full mb-10 sm:mb-15 lg:mb-20 mt-10">
+        <section class="flex justify-between gap-x-40 w-full mb-10 sm:mb-15 lg:mb-20 mt-10">
           <div class="w-full">
             <div class="bg-dark-accent dark:bg-light-accent rounded-full px-6 py-1.5 text-center mb-2 w-fit">
               <p class="uppercase text-xs text-light-accent dark:text-neutral-900 font-bold">
@@ -186,11 +187,11 @@
             <p class="text-xl sm:text-2xl uppercase font-bold dark:text-light-accent mb-1">
               Alt Tags for Images
             </p>
-            <p class="text-lg mb-8 dark:text-gray-200">
+            <p tabindex="0" class="text-lg mb-8 dark:text-gray-200">
               Images on a webpage provide valuable content, but they can create barriers for users with limited or impaired vision. Assigning alt tags to images is essential as it provides a description of the images, enabling users to understand them through screen readers. Alt tags also contribute to higher SEO scores on search engines like Google.
             </p>
-            <img src="/assets/images/cat.jpg" alt="orange tabby cat wearing black and white jacket" class="h-[60vh] mb-4 rounded drop-shadow-lg">
-            <p class="text-xl font-bold text-neutral-700 dark:text-neutral-100">
+            <img tabindex="0" src="/assets/images/cat.jpg" alt="orange tabby cat wearing black and white jacket" class="h-[60vh] mb-4 rounded drop-shadow-lg">
+            <p tabindex="0" class="text-xl font-bold text-neutral-700 dark:text-neutral-100">
               <span class="font-medium">
                 alt&equals;
               </span>
@@ -199,7 +200,7 @@
           </div>
         </section>
         <section class="flex flex-col 2xl:items-center mx-auto w-full 2xl:w-4/6 mb-10 sm:mb-15 lg:mb-20 2xl:text-center">
-          <div class="bg-dark-accent dark:bg-light-accent rounded-full px-6 py-1.5 2xl:text-center mb-2 w-fit">
+          <div tabindex="0" class="bg-dark-accent dark:bg-light-accent rounded-full px-6 py-1.5 2xl:text-center mb-2 w-fit">
             <p class="uppercase text-xs text-light-accent dark:text-neutral-900 font-bold">
               Keyboard Navigability
             </p>
@@ -207,10 +208,10 @@
           <p class="text-xl sm:text-2xl uppercase font-bold dark:text-light-accent mb-1">
             Enhance Keyboard Navigation for Improved User Experience
           </p>
-          <p class="text-lg mb-8 dark:text-gray-200">
+          <p tabindex="0" class="text-lg mb-8 dark:text-gray-200">
             By designing websites with keyboard navigation in mind, you provide an inclusive browsing experience, allowing users with disabilities, motor impairments, or personal preferences to access and interact with your content easily.
           </p>
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-5 h-40 w-full drop-shadow-2xl text-sm sm:text-xl font-bold">
+          <div tabindex="0" class="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-5 h-40 w-full drop-shadow-2xl text-sm sm:text-xl font-bold">
             <button
               class="
                 block rounded-lg border border-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 flex items-center justify-center w-full h-full w-full transition-all
@@ -250,7 +251,7 @@
           </div>
         </section>
         <section class="flex flex-col 2xl:items-center mx-auto w-full 2xl:w-4/6 mb-10 sm:mb-15 lg:mb-20 2xl:text-center">
-          <div class="bg-dark-accent dark:bg-light-accent rounded-full px-6 py-1.5 text-center mb-2 w-fit">
+          <div tabindex="0" class="bg-dark-accent dark:bg-light-accent rounded-full px-6 py-1.5 text-center mb-2 w-fit">
             <p class="uppercase text-xs text-light-accent dark:text-neutral-900 font-bold">
               Language
             </p>
@@ -258,10 +259,10 @@
           <p class="text-xl sm:text-2xl uppercase font-bold dark:text-light-accent mb-1">
             Language Identification
           </p>
-          <p class="text-lg mb-8 dark:text-gray-200">
+          <p tabindex="0" class="text-lg mb-8 dark:text-gray-200">
             By using the lang attribute appropriately, you enhance the accessibility of your website by ensuring that assistive technologies and language-specific features can properly interpret and present the content
           </p>
-          <div class="mockup-code text-xs sm:text-sm bg-dark-accent text-gray-100">
+          <div tabindex="0" class="mockup-code text-xs sm:text-sm bg-dark-accent text-gray-100">
             <pre class="text-start" data-prefix="1"><code>&lt;html lang="en"&gt;</code></pre>
             <pre class="text-start" data-prefix="2"><code>...</code></pre>
             <pre class="text-start" data-prefix="3"><code>&lt;p&gt;We must worry about accessibility.&lt;p&gt; </code></pre>
@@ -269,7 +270,7 @@
           </div>
         </section>
         <section id="forms" class="flex flex-col items-center mb-10 sm:mb-15 lg:mb-20 w-full 2xl:w-5/6 mx-auto">
-          <div class="bg-dark-accent dark:bg-light-accent rounded-full px-6 py-1.5 text-center mb-2 w-fit">
+          <div tabindex="0" class="bg-dark-accent dark:bg-light-accent rounded-full px-6 py-1.5 text-center mb-2 w-fit">
             <p class="uppercase text-xs text-light-accent dark:text-neutral-900 font-bold">
               Forms
             </p>
@@ -279,7 +280,7 @@
           </p>
           <div class="flex flex-col sm:flex-row w-full gap-x-5 xl:gap-x-20">
             <div class="w-full sm:w-1/2 mb-6 sm:mb-0"> 
-              <form class="form rounded-md bg-zinc-50 dark:bg-zinc-900 p-4 flex flex-col justify-between mb-4 h-auto sm:h-80 lg:h-72 border border-neutral-200 dark:border-zinc-800">
+              <form tabindex="0"  class="form rounded-md bg-zinc-50 dark:bg-zinc-900 p-4 flex flex-col justify-between mb-4 h-auto sm:h-80 lg:h-72 border border-neutral-200 dark:border-zinc-800">
                 <div>
                   <div class="form-control mb-4">
                     <input 
@@ -301,10 +302,10 @@
                   Register
                 </button>
               </form>
-              <p class="dark:text-neutral-100 font-semibold mb-4 text-lg">
+              <p tabindex="0" class="dark:text-neutral-100 font-semibold mb-4 text-lg">
                 Don't
               </p>
-              <ul class="dark:text-neutral-200 flex flex-col gap-y-2 lg:gap-y-4 h-auto sm:h-[25rem] lg:h-60 2xl:h-[17rem]">
+              <ul tabindex="0"  class="dark:text-neutral-200 flex flex-col gap-y-2 lg:gap-y-4 h-auto sm:h-[25rem] lg:h-60 2xl:h-[17rem]">
                 <li class="flex items-center gap-x-4">
                   <i class="ph-bold ph-x text-red-500"></i>
                   <p>
@@ -324,9 +325,9 @@
             </div>
 
             <div class="w-full sm:w-1/2 drop-shadow-2xl">
-              <form class="form rounded-md bg-zinc-50 dark:bg-zinc-700 p-4 flex flex-col justify-between mb-4 h-auto sm:h-80 lg:h-72 border dark:border-zinc-800">
+              <form tabindex="0" class="form rounded-md bg-zinc-50 dark:bg-zinc-700 p-4 flex flex-col justify-between mb-4 h-auto sm:h-80 lg:h-72 border dark:border-zinc-800">
                 <div>
-                  <div class="form-control mb-2 dark:text-neutral-100">
+                  <div tabindex="0" class="form-control mb-2 dark:text-neutral-100">
                     <label for="name" class="mb-1">
                       Name
                     </label>
@@ -360,10 +361,10 @@
                   Register
                 </button>
               </form>
-              <p class="dark:text-neutral-100 font-semibold mb-4 text-lg">
+              <p tabindex="0" class="dark:text-neutral-100 font-semibold mb-4 text-lg">
                 Do
               </p>
-              <ul class="flex flex-col gap-y-2 lg:gap-y-4 dark:text-neutral-200 h-auto sm:h-[25rem] lg:h-60 2xl:h-[17rem]">
+              <ul tabindex="0" class="flex flex-col gap-y-2 lg:gap-y-4 dark:text-neutral-200 h-auto sm:h-[25rem] lg:h-60 2xl:h-[17rem]">
                 <li class="flex items-center gap-x-4">
                   <i class="ph-bold ph-check text-2xl text-green-500"></i>
                   <p>
@@ -422,7 +423,7 @@
                 <p>By utilizing ARIA attributes and roles, developers can improve the accessibility of interactive components, such as menus, modals, tabs, and more. ARIA helps ensure that assistive technologies can properly interpret and communicate the functionality and behavior of these components to users with disabilities.</p>
               </div>
             </div>
-            <div class="mockup-code text-xs sm:text-sm bg-dark-accent text-gray-100 flex-shrink-1 w-full">
+            <div tabindex="0" class="mockup-code text-xs sm:text-sm bg-dark-accent text-gray-100 flex-shrink-1 w-full">
               <pre data-prefix="1"><code>&lt;div&gt;</code></pre>
               <pre data-prefix="2"><code>&ensp; &lt;button</code></pre>
               <pre data-prefix="3"><code>&ensp;  type="button"</code></pre>
@@ -448,7 +449,7 @@
           </div>
         </section>
         <section id="accessibility-tests" class="mb-10">
-          <div class="bg-dark-accent dark:bg-light-accent rounded-full px-6 py-1.5 text-center mb-2 w-fit">
+          <div tabindex="0" class="bg-dark-accent dark:bg-light-accent rounded-full px-6 py-1.5 text-center mb-2 w-fit">
             <p class="uppercase text-xs text-light-accent dark:text-neutral-900 font-bold">
               Tests
             </p>
@@ -456,12 +457,12 @@
           <p class="text-xl sm:text-2xl uppercase font-bold  dark:text-light-accent mb-1">
             Accessibility Tests
           </p>
-          <p class="text-lg dark:text-gray-200 mb-6">
+          <p tabindex="0" class="text-lg dark:text-gray-200 mb-6">
             Accessibility tests help ensure that websites or applications are usable and accessible.  
           </p>
     
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="flex flex-col p-6 rounded-lg bg-gradient-to-r from-primary to-primary/75 shadow-lg">
+            <div tabindex="0" class="flex flex-col p-6 rounded-lg bg-gradient-to-r from-primary to-primary/75 shadow-lg">
     
               <div class="flex items-center mb-6">
                 <div class="rounded-full bg-white h-12 w-12 flex items-center justify-center mr-4">
@@ -475,7 +476,7 @@
               </p>
             </div>
     
-            <div class="p-6 rounded-lg bg-gradient-to-r from-dark-accent to-dark-accent/75 shadow-lg">
+            <div tabindex="0" class="p-6 rounded-lg bg-gradient-to-r from-dark-accent to-dark-accent/75 shadow-lg">
               <div class="flex items-center mb-6">
                 <div class="rounded-full bg-white h-12 w-12 flex items-center justify-center mr-6">
                   <i class="ph-bold ph-hand-pointing text-dark-accent text-2xl"></i>
